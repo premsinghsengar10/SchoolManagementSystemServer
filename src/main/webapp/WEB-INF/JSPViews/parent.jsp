@@ -110,7 +110,9 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="container">
-            <h2 class="mb-0">Welcome, ${sessionScope.loggedInUser}</h2>
+            <h2 class="mb-0">Welcome
+			<!--	, ${sessionScope.loggedInUser}-->
+			</h2>
             <p class="text-muted mb-0">Parent Dashboard</p>
         </div>
     </div>
@@ -125,7 +127,7 @@
                     <table class="table table-borderless info-table">
                         <tbody>
                             <tr>
-                                <td>Admin No</td>
+                                <td>Student Email</td>
                                 <td>${student.adminNo}</td>
                             </tr>
                             <tr>

@@ -23,7 +23,6 @@ public class AttendanceService {
     }
 
     public void saveAttendance(TeacherAttendence attendance) {
-        attendance.calculateAttendance(); // calculate before saving
         teacherAttendanceRepository.save(attendance);
     }
 

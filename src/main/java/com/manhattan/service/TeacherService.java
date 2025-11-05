@@ -25,6 +25,20 @@ public class TeacherService {
     public void saveTeacher(Teacher teacher) {
         teacherRepository.save(teacher);
     }
+    
+    public void updateTeacher(Long id, Teacher updatedTeacher) {
+        Teacher existingTeacher = teacherRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Teacher not found with id: " + id));
+
+        // Update fields
+        existingTeacher.setFullName(updatedTeacher.getFullName());
+        existingTeacher.setDob(updatedTeacher.getDob());
+        existingTeacher.setPhoneNo(updatedTeacher.getPhoneNo());
+        existingTeacher.setTeacherAdminNo(updatedTeacher.getTeacherAdminNo());
+
+        teacherRepository.save(existingTeacher);
+    }
+
 
     public void deleteTeacher(Long id) {
         teacherRepository.deleteById(id);

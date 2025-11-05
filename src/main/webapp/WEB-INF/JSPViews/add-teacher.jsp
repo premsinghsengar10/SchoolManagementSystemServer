@@ -2,7 +2,7 @@
 <head><title>Add Teacher</title></head>
 <body>
 <h2>Add Teacher</h2>
-<form action="/admin/teachers/add" method="post">
+<form action="/admin/teachers/save" method="post">
     Full Name: <input type="text" name="fullName"/><br><br>
     DOB: <input type="date" name="dob"/><br><br>
     Phone No: <input type="text" name="phoneNo"/><br><br>

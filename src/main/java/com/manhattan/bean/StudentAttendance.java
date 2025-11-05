@@ -28,6 +28,6 @@ public class StudentAttendance {
             this.percentage = 0.0;
         }
 
-        this.status = (percentage < 75) ? "Fail" : "Pass";
+        this.status = (percentage < 75) ? "Low Attendance" : "Good Attendance";
     }
 }

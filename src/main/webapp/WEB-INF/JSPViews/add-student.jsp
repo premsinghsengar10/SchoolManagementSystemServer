@@ -93,7 +93,7 @@
             <i class="bi bi-person-plus"></i>
             <h2>Add New Student</h2>
         </div>
-        <form action="/admin/students/add" method="post" class="needs-validation" novalidate>
+        <form action="/admin/students/save" method="post" class="needs-validation" novalidate>
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="adminNo" class="form-label">Admin No</label>

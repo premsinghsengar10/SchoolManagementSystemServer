@@ -95,7 +95,7 @@
     <div class="page-header">
         <div class="container">
             <h2 class="mb-0">Teacher Dashboard</h2>
-            <p class="text-muted mb-0">Admin No: ${teacherAdminNo}</p>
+            <p class="text-muted mb-0">Welcome ${Teacher.fullName}</p>
         </div>
     </div>
 
@@ -138,7 +138,7 @@
                     <h5 class="alert-heading">Search Result</h5>
                     <hr>
                     <p class="mb-1"><strong>Full Name:</strong> ${searchResult.fullName}</p>
-                    <p class="mb-1"><strong>Admin No:</strong> ${searchResult.adminNo}</p>
+                    <p class="mb-1"><strong>Email:</strong> ${searchResult.adminNo}</p>
                     <p class="mb-3"><strong>Standard:</strong> ${searchResult.standard}</p>
                     <a href="/teacher/report/${searchResult.adminNo}" class="btn btn-success btn-sm">
                         <i class="bi bi-file-earmark-pdf me-1"></i>Download Report
@@ -175,7 +175,7 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Admin No</th>
+                                    <th>Email</th>
                                     <th>Full Name</th>
                                     <th>Standard</th>
                                     <th>Phone</th>
@@ -215,7 +215,7 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Admin No</th>
+                                    <th>Email</th>
                                     <th>Month</th>
                                     <th>Days Attended</th>
                                     <th>Total Days</th>
@@ -260,7 +260,7 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Admin No</th>
+                                    <th>Email</th>
                                     <th>Standard</th>
                                     <th>Year</th>
                                     <th>Exam</th>
@@ -310,7 +310,7 @@
                 <form action="/teacher/attendance/add" method="post">
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label class="form-label">Admin No</label>
+                            <label class="form-label">Email</label>
                             <input type="text" name="adminNo" class="form-control" required>
                         </div>
                         <div class="mb-3">
@@ -347,7 +347,7 @@
                     <div class="modal-body">
                         <input type="hidden" id="editAttId" name="id">
                         <div class="mb-3">
-                            <label class="form-label">Admin No</label>
+                            <label class="form-label">Email</label>
                             <input type="text" id="editAttAdminNo" name="adminNo" class="form-control" required>
                         </div>
                         <div class="mb-3">
@@ -383,7 +383,7 @@
                 <form action="/teacher/marks/add" method="post">
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label class="form-label">Admin No</label>
+                            <label class="form-label">Email</label>
                             <input type="text" name="adminNo" class="form-control" required>
                         </div>
                         <div class="mb-3">
@@ -434,7 +434,7 @@
                     <div class="modal-body">
                         <input type="hidden" id="editMarksId" name="id">
                         <div class="mb-3">
-                            <label class="form-label">Admin No</label>
+                            <label class="form-label">Email</label>
                             <input type="text" id="editMarksAdminNo" name="adminNo" class="form-control" required>
                         </div>
                         <div class="mb-3">

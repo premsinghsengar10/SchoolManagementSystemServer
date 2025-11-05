@@ -70,9 +70,9 @@ public class AdminController {
         return "edit-student";
     }
 
-    @PostMapping("/students/update")
-    public String updateStudent(@ModelAttribute("student") Student student) {
-        studentService.saveStudent(student);
+    @PostMapping("/students/update/{id}")
+    public String updateStudent(@PathVariable Long id,@ModelAttribute("student") Student student) {
+        studentService.updateStudent(id,student);
         return "redirect:/admin/dashboard";
     }
 
@@ -102,9 +102,9 @@ public class AdminController {
         return "edit-teacher";
     }
 
-    @PostMapping("/teachers/update")
-    public String updateTeacher(@ModelAttribute("teacher") Teacher teacher) {
-        teacherService.saveTeacher(teacher);
+    @PostMapping("/teachers/update/{id}")
+    public String updateTeacher(@PathVariable Long id,@ModelAttribute("teacher") Teacher teacher) {
+        teacherService.updateTeacher(id,teacher);
         return "redirect:/admin/dashboard";
     }
 

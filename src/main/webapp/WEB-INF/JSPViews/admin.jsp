@@ -194,10 +194,6 @@
         <div class="stat-value">${attendanceAverage}%</div>
     </div>
 
-    <div class="stat-card">
-        <div class="stat-title">Total Classes</div>
-        <div class="stat-value">${classCount}</div>
-    </div>
 </div>
 
 <!-- ===== Students Section ===== -->
@@ -308,26 +304,6 @@
 
 
 
-<!-- ===== Classes Section (placeholder) ===== -->
-<section>
-    <h2>Classes</h2>
-    <a href="/admin/classes/add" class="add-btn">+ Add Class</a>
-    <table>
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Class Name</th>
-            <th>Section</th>
-            <th>Teacher</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:if test="${empty classes}">
-            <tr><td colspan="4" style="color:#777;">No classes data available yet.</td></tr>
-        </c:if>
-        </tbody>
-    </table>
-</section>
 
 <footer>
     © 2025 Manhattan School Management System

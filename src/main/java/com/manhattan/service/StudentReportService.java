@@ -94,7 +94,7 @@ public class StudentReportService {
 
             document.add(new Paragraph("Student Details", sectionHeader));
             document.add(new Paragraph("Full Name: " + student.getFullName(), normalFont));
-            document.add(new Paragraph("Admin No: " + student.getAdminNo(), normalFont));
+            document.add(new Paragraph("Student Email: " + student.getAdminNo(), normalFont));
             document.add(new Paragraph("Standard: " + student.getStandard(), normalFont));
             document.add(new Paragraph("Date of Birth: " + student.getDob(), normalFont));
             document.add(new Paragraph("Phone No: " + student.getPhoneNo(), normalFont));
